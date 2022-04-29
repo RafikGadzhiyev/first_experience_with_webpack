@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <span class="application_title">Splitter</span>
+        <div class="content_container">
+            <div class="content_wrapper">
+                <div class="right-side">
+                    <form class='data-form'>
+                        <div class="bill-container">
+                            <label for="bill_input" class="bill_label">Bill</label>
+                            <div class="bill_input-container">
+                                <img class='bill_image' alt="">
+                                <input type="number" name="bill_input" id="bill_input" class="bill-input" value='1'>
+                            </div>
+                        </div>
+                        <div class='tip_data-container'>
+                            <span class="tip_text">Select tip</span>
+                            <div class="tip_container">
+                                <button class="tip_1 tip_button" name="tip_1">5%</button>
+                                <button class="tip_2 tip_button" name='tip_2'>10%</button>
+                                <button class="tip_3 tip_button" name='tip_3'>15%</button>
+                                <button class="tip_4 tip_button" name='tip_4'>20%</button>
+                                <button class="tip_5 tip_button" name='tip_5'>25%</button>
+                                <button class="tip_custom tip_button" name="tip_custom">Custom</button>
+                            </div>
+                        </div>
+                        <div class='people_amount-container'>
+                            <label for="people_amount-input">Number of People</label>
+                            <div class="total_person_input-container">
+                                <img class='person_image' alt="">
+                                <input type="number" id='people_amount-input' name='people_amount-input'
+                                    class='people_amount-input' value='1' />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="left-side">
+                    <div class="left_side-wrapper">
+                        <div class='tip_amount-container'>
+                            <span class='tip_amount-text'>Tip amount</span>
+                            <span class='tip_amount_total'>$0.00</span>
+                        </div>
+                        <div class='total-container'>
+                            <span class='total-text'>Total</span>
+                            <span class='total-total'>$0.00</span>
+                        </div>
+
+                        <button class="reset-button" name="tip_reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <dialog class="dialog">
+        <form class="dialog_form">
+            <input type="number" value='1' class="dialog_input">
+            <div>
+                <button class="dialog_save-button">Save</button>
+                <button class="dialog_close-button">Close</button>
+            </div>
+        </form>
+    </dialog>
+</body>
+
+</html>
